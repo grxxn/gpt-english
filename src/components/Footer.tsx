@@ -12,8 +12,13 @@ const Footer = () => {
 };
 
 const FooterContainer = styled.footer`
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
   align-items: end;
+  width: 100%;
   height: 50px;
   font-size: 12px;
   line-height: 17px;

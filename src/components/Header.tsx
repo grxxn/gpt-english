@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Header = () => {
@@ -8,14 +9,18 @@ const Header = () => {
     <HeaderContainer>
       <div className="header-gnb">
         <h1>
-          <a href="./">GPT English</a>
+          <Link to="./">GPT English</Link>
         </h1>
         <ul>
-          <li>대화하기</li>
-          <li>기록하기</li>
+          <li>
+            <Link to='./'>대화하기</Link>
+          </li>
+          <li>
+            <Link to='./'>기록하기</Link>
+          </li>
         </ul>
       </div>
-      <button type="button">로그인</button>
+      <Link to='./login'>로그인</Link>
     </HeaderContainer>
   );
 };
@@ -33,7 +38,7 @@ const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h1 {
+    h1>a {
       color: #0D83FF;
       font-weight: 700;
       font-size: 24px;
@@ -54,7 +59,7 @@ const HeaderContainer = styled.header`
       }
     }
   }
-  button {
+  a {
     font-size: 15px;
     line-height: 22px;
   }
