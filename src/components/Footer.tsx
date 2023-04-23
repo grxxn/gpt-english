@@ -13,9 +13,9 @@ const Footer = () => {
 
 const FooterContainer = styled.footer`
   box-sizing: border-box;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
+  bottom: -50px;
+  transform: translateY(-100%);
   display: flex;
   align-items: end;
   width: 100%;

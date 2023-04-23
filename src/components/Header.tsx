@@ -9,18 +9,18 @@ const Header = () => {
     <HeaderContainer>
       <div className="header-gnb">
         <h1>
-          <Link to="./">GPT English</Link>
+          <Link to="/">GPT English</Link>
         </h1>
         <ul>
           <li>
-            <Link to='./'>대화하기</Link>
+            <Link to='/tainen'>대화하기</Link>
           </li>
           <li>
-            <Link to='./'>기록하기</Link>
+            <Link to='/reinen'>기록하기</Link>
           </li>
         </ul>
       </div>
-      <Link to='./login'>로그인</Link>
+      <Link to='/login'>로그인</Link>
     </HeaderContainer>
   );
 };

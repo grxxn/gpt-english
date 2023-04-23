@@ -10,6 +10,7 @@ const Btn = styled.button`
   font-weight: 400;
   letter-spacing: -0.05em;
   line-height: 20.27px;
+  cursor: pointer;
 `;
 
 export default Btn;
