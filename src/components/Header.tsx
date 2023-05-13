@@ -51,7 +51,6 @@ const HeaderContainer = styled.header`
       justify-content: space-between;
       li {
         margin-right: 60px;
-        font-size: 15px;
         line-height: 22px;
       }
       li:last-child {
@@ -60,7 +59,7 @@ const HeaderContainer = styled.header`
     }
   }
   a {
-    font-size: 15px;
+    font-size: 13px;
     line-height: 22px;
   }
 `;

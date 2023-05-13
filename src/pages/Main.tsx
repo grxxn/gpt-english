@@ -151,7 +151,8 @@ const MainContainer = styled.div`
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
-      row-gap: 47px;
+      /* row-gap: 47px; */
+      gap: 47px;
       padding: 0 175px;
 
       &>div {
@@ -167,6 +168,12 @@ const MainContainer = styled.div`
         p {
           font-size: 15px;
         }
+      }
+      &>div:nth-child(1), &>div:nth-child(3) {
+        justify-self: end; 
+      }
+      &>div:nth-child(2), &>div:nth-child(4) {
+        justify-self: baseline; 
       }
     }
   }
